@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d7028da68cba8e4047772a559119c241 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+            <div class="folium-map" id="map_d7028da68cba8e4047772a559119c241" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d7028da68cba8e4047772a559119c241 = L.map(
+                "map_d7028da68cba8e4047772a559119c241",
+                {
+                    center: [34.3225, 108.879],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dfc68921a30e50eb1e3709a2a796d848 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_dfc68921a30e50eb1e3709a2a796d848.addTo(map_d7028da68cba8e4047772a559119c241);
+        
+    
+            var polygon_82f1abdf4ed54bfddfd862251342514d = L.polygon(
+                [[34.354, 108.83], [34.354, 108.914], [34.291, 108.914], [34.291, 108.83], [34.354, 108.83]],
+                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_d7028da68cba8e4047772a559119c241);
+        
+    
+            var marker_2914e80efce26c3a62b226d0ab805e76 = L.marker(
+                [34.3044, 108.8572],
+                {
+}
+            ).addTo(map_d7028da68cba8e4047772a559119c241);
+        
+    
+            var icon_f01602ea0291423d9c135cc05cc86ce2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "crown",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64889f3e4903c9a058efe31ebda3f4e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0462a8fba9ec33613d9fbf38d4c4fe70 = $(`<div id="html_0462a8fba9ec33613d9fbf38d4c4fe70" style="width: 100.0%; height: 100.0%;">未央宫 (Weiyang Palace)</div>`)[0];
+                popup_64889f3e4903c9a058efe31ebda3f4e0.setContent(html_0462a8fba9ec33613d9fbf38d4c4fe70);
+            
+        
+
+        marker_2914e80efce26c3a62b226d0ab805e76.bindPopup(popup_64889f3e4903c9a058efe31ebda3f4e0)
+        ;
+
+        
+    
+    
+                marker_2914e80efce26c3a62b226d0ab805e76.setIcon(icon_f01602ea0291423d9c135cc05cc86ce2);
+            
+    
+            var marker_06ffe4fea4961776efd4af9f6cceac47 = L.marker(
+                [34.3044, 108.8975],
+                {
+}
+            ).addTo(map_d7028da68cba8e4047772a559119c241);
+        
+    
+            var icon_67f2d5d140b5a3a66106e8e38410a807 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7c1a9cab62a1e10bb6280896ed5174d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17c57234a7cede8d4f286b6c8ca7a9ee = $(`<div id="html_17c57234a7cede8d4f286b6c8ca7a9ee" style="width: 100.0%; height: 100.0%;">长乐宫 (Changle Palace)</div>`)[0];
+                popup_c7c1a9cab62a1e10bb6280896ed5174d.setContent(html_17c57234a7cede8d4f286b6c8ca7a9ee);
+            
+        
+
+        marker_06ffe4fea4961776efd4af9f6cceac47.bindPopup(popup_c7c1a9cab62a1e10bb6280896ed5174d)
+        ;
+
+        
+    
+    
+                marker_06ffe4fea4961776efd4af9f6cceac47.setIcon(icon_67f2d5d140b5a3a66106e8e38410a807);
+            
+    
+            var marker_2cbbc28ddc2fe69443f9bf649340da2b = L.marker(
+                [34.3086, 108.8333],
+                {
+}
+            ).addTo(map_d7028da68cba8e4047772a559119c241);
+        
+    
+            var icon_d808d003bd56be01ce8c78c71eec4b97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "building",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_526dfbd3514b7a639eb0c1c120424d34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22912570429471ff94dd68ad8a58765e = $(`<div id="html_22912570429471ff94dd68ad8a58765e" style="width: 100.0%; height: 100.0%;">建章宫 (Jianzhang Palace)</div>`)[0];
+                popup_526dfbd3514b7a639eb0c1c120424d34.setContent(html_22912570429471ff94dd68ad8a58765e);
+            
+        
+
+        marker_2cbbc28ddc2fe69443f9bf649340da2b.bindPopup(popup_526dfbd3514b7a639eb0c1c120424d34)
+        ;
+
+        
+    
+    
+                marker_2cbbc28ddc2fe69443f9bf649340da2b.setIcon(icon_d808d003bd56be01ce8c78c71eec4b97);
+            
+    
+            var marker_3397c6b9a7b75bac9ac200787407837f = L.marker(
+                [34.325, 108.8975],
+                {
+}
+            ).addTo(map_d7028da68cba8e4047772a559119c241);
+        
+    
+            var icon_ece5b1b5ab20f1014bd55872112aea05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "sun",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0fa0e00246df6e1460f4cd6721429d67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6511d8c9a74ac111a745c786dee66f4e = $(`<div id="html_6511d8c9a74ac111a745c786dee66f4e" style="width: 100.0%; height: 100.0%;">明光宫 (Mingguang Palace)</div>`)[0];
+                popup_0fa0e00246df6e1460f4cd6721429d67.setContent(html_6511d8c9a74ac111a745c786dee66f4e);
+            
+        
+
+        marker_3397c6b9a7b75bac9ac200787407837f.bindPopup(popup_0fa0e00246df6e1460f4cd6721429d67)
+        ;
+
+        
+    
+    
+                marker_3397c6b9a7b75bac9ac200787407837f.setIcon(icon_ece5b1b5ab20f1014bd55872112aea05);
+            
+    
+            var marker_b7f3ba7f4256abbc17462a2aa3054e02 = L.marker(
+                [34.325, 108.8572],
+                {
+}
+            ).addTo(map_d7028da68cba8e4047772a559119c241);
+        
+    
+            var icon_1a968887d685aa48234909aee160bfd8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c480a3a5784727b8b8ab1c372f2e685e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7291f2cbc78f42bc156396ff0f69a055 = $(`<div id="html_7291f2cbc78f42bc156396ff0f69a055" style="width: 100.0%; height: 100.0%;">桂宫 (Gui Palace)</div>`)[0];
+                popup_c480a3a5784727b8b8ab1c372f2e685e.setContent(html_7291f2cbc78f42bc156396ff0f69a055);
+            
+        
+
+        marker_b7f3ba7f4256abbc17462a2aa3054e02.bindPopup(popup_c480a3a5784727b8b8ab1c372f2e685e)
+        ;
+
+        
+    
+    
+                marker_b7f3ba7f4256abbc17462a2aa3054e02.setIcon(icon_1a968887d685aa48234909aee160bfd8);
+            
+    
+            var marker_c8ea358b74794e8570332ebc7b1e3986 = L.marker(
+                [34.325, 108.87],
+                {
+}
+            ).addTo(map_d7028da68cba8e4047772a559119c241);
+        
+    
+            var icon_152d59c1437afb8ad5474d02f1f323a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "arrow-up",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d5b65b560d4bc17465f73429e0ddd7fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e3cc970021b3707a9f2ba04fa704fa0 = $(`<div id="html_2e3cc970021b3707a9f2ba04fa704fa0" style="width: 100.0%; height: 100.0%;">北宫 (North Palace)</div>`)[0];
+                popup_d5b65b560d4bc17465f73429e0ddd7fb.setContent(html_2e3cc970021b3707a9f2ba04fa704fa0);
+            
+        
+
+        marker_c8ea358b74794e8570332ebc7b1e3986.bindPopup(popup_d5b65b560d4bc17465f73429e0ddd7fb)
+        ;
+
+        
+    
+    
+                marker_c8ea358b74794e8570332ebc7b1e3986.setIcon(icon_152d59c1437afb8ad5474d02f1f323a8);
+            
+</script>
+</html>
