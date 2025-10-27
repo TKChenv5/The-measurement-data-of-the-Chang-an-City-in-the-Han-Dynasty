@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_d7028da68cba8e4047772a559119c241 {
+                #map_6c8da0fb6029c64497b9c3727121291a {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,18 +54,16 @@
 <body>
     
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
-            <div class="folium-map" id="map_d7028da68cba8e4047772a559119c241" ></div>
+            <div class="folium-map" id="map_6c8da0fb6029c64497b9c3727121291a" ></div>
         
 </body>
 <script>
     
     
-            var map_d7028da68cba8e4047772a559119c241 = L.map(
-                "map_d7028da68cba8e4047772a559119c241",
+            var map_6c8da0fb6029c64497b9c3727121291a = L.map(
+                "map_6c8da0fb6029c64497b9c3727121291a",
                 {
-                    center: [34.3225, 108.879],
+                    center: [34.322, 108.8835],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 13,
@@ -80,7 +78,7 @@
 
         
     
-            var tile_layer_dfc68921a30e50eb1e3709a2a796d848 = L.tileLayer(
+            var tile_layer_0ecf8d015878c7c7e8b8392f5ff4e813 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -97,241 +95,234 @@
             );
         
     
-            tile_layer_dfc68921a30e50eb1e3709a2a796d848.addTo(map_d7028da68cba8e4047772a559119c241);
+            tile_layer_0ecf8d015878c7c7e8b8392f5ff4e813.addTo(map_6c8da0fb6029c64497b9c3727121291a);
         
     
-            var polygon_82f1abdf4ed54bfddfd862251342514d = L.polygon(
-                [[34.354, 108.83], [34.354, 108.914], [34.291, 108.914], [34.291, 108.83], [34.354, 108.83]],
-                {"bubblingMouseEvents": true, "color": "brown", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
-            ).addTo(map_d7028da68cba8e4047772a559119c241);
+            var polygon_762b4195e71a7d0d29a016c1c098de1c = L.polygon(
+                [[34.2913, 108.849], [34.2913, 108.918], [34.353, 108.918], [34.353, 108.849]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_6c8da0fb6029c64497b9c3727121291a);
         
     
-            var marker_2914e80efce26c3a62b226d0ab805e76 = L.marker(
-                [34.3044, 108.8572],
-                {
-}
-            ).addTo(map_d7028da68cba8e4047772a559119c241);
-        
-    
-            var icon_f01602ea0291423d9c135cc05cc86ce2 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "crown",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_64889f3e4903c9a058efe31ebda3f4e0 = L.popup({
+        var popup_e2c352928428366b3e68364c82e7ab9f = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_0462a8fba9ec33613d9fbf38d4c4fe70 = $(`<div id="html_0462a8fba9ec33613d9fbf38d4c4fe70" style="width: 100.0%; height: 100.0%;">未央宫 (Weiyang Palace)</div>`)[0];
-                popup_64889f3e4903c9a058efe31ebda3f4e0.setContent(html_0462a8fba9ec33613d9fbf38d4c4fe70);
+                var html_878fa633542921db63ce6c53355dfc1e = $(`<div id="html_878fa633542921db63ce6c53355dfc1e" style="width: 100.0%; height: 100.0%;">Approximate boundaries of Han Chang'an City Walls (Western Han Dynasty, ~202 BC - AD 9). Historical dimensions: North wall ~5950m, South ~6250m, East ~5940m, West ~4550m.</div>`)[0];
+                popup_e2c352928428366b3e68364c82e7ab9f.setContent(html_878fa633542921db63ce6c53355dfc1e);
             
         
 
-        marker_2914e80efce26c3a62b226d0ab805e76.bindPopup(popup_64889f3e4903c9a058efe31ebda3f4e0)
+        polygon_762b4195e71a7d0d29a016c1c098de1c.bindPopup(popup_e2c352928428366b3e68364c82e7ab9f)
         ;
 
         
     
     
-                marker_2914e80efce26c3a62b226d0ab805e76.setIcon(icon_f01602ea0291423d9c135cc05cc86ce2);
-            
-    
-            var marker_06ffe4fea4961776efd4af9f6cceac47 = L.marker(
-                [34.3044, 108.8975],
+            var marker_49de9f5c65c0b351f3a353e6c03fc26c = L.marker(
+                [34.30444, 108.85722],
                 {
 }
-            ).addTo(map_d7028da68cba8e4047772a559119c241);
+            ).addTo(map_6c8da0fb6029c64497b9c3727121291a);
         
     
-            var icon_67f2d5d140b5a3a66106e8e38410a807 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "star",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_c7c1a9cab62a1e10bb6280896ed5174d = L.popup({
+        var popup_39cf97c6f6d63bd0bf78f74212a8948a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_17c57234a7cede8d4f286b6c8ca7a9ee = $(`<div id="html_17c57234a7cede8d4f286b6c8ca7a9ee" style="width: 100.0%; height: 100.0%;">长乐宫 (Changle Palace)</div>`)[0];
-                popup_c7c1a9cab62a1e10bb6280896ed5174d.setContent(html_17c57234a7cede8d4f286b6c8ca7a9ee);
+                var html_4712918e3b2e3cab1523b88bada8525d = $(`<div id="html_4712918e3b2e3cab1523b88bada8525d" style="width: 100.0%; height: 100.0%;">Weiyang Palace: Largest palace complex in history (~4.8 km²), built ~198 BC. Served as the primary administrative center for imperial conferences, royal residence for emperors, political decision-making hub, and command center for the Silk Road initiatives.</div>`)[0];
+                popup_39cf97c6f6d63bd0bf78f74212a8948a.setContent(html_4712918e3b2e3cab1523b88bada8525d);
             
         
 
-        marker_06ffe4fea4961776efd4af9f6cceac47.bindPopup(popup_c7c1a9cab62a1e10bb6280896ed5174d)
+        marker_49de9f5c65c0b351f3a353e6c03fc26c.bindPopup(popup_39cf97c6f6d63bd0bf78f74212a8948a)
         ;
 
         
     
     
-                marker_06ffe4fea4961776efd4af9f6cceac47.setIcon(icon_67f2d5d140b5a3a66106e8e38410a807);
-            
-    
-            var marker_2cbbc28ddc2fe69443f9bf649340da2b = L.marker(
-                [34.3086, 108.8333],
+            marker_49de9f5c65c0b351f3a353e6c03fc26c.bindTooltip(
+                `<div>
+                     Weiyang Palace
+                 </div>`,
                 {
-}
-            ).addTo(map_d7028da68cba8e4047772a559119c241);
-        
-    
-            var icon_d808d003bd56be01ce8c78c71eec4b97 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "building",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
+  "sticky": true,
 }
             );
         
     
-        var popup_526dfbd3514b7a639eb0c1c120424d34 = L.popup({
+            var marker_52e0a8525ec914f470efd22d30d8c710 = L.marker(
+                [34.31111, 108.8975],
+                {
+}
+            ).addTo(map_6c8da0fb6029c64497b9c3727121291a);
+        
+    
+        var popup_e0aab2c2ba1814348e1ee949990c0aa2 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_22912570429471ff94dd68ad8a58765e = $(`<div id="html_22912570429471ff94dd68ad8a58765e" style="width: 100.0%; height: 100.0%;">建章宫 (Jianzhang Palace)</div>`)[0];
-                popup_526dfbd3514b7a639eb0c1c120424d34.setContent(html_22912570429471ff94dd68ad8a58765e);
+                var html_1ec37f2cc3d9c4304f373713415e0d84 = $(`<div id="html_1ec37f2cc3d9c4304f373713415e0d84" style="width: 100.0%; height: 100.0%;">Changle Palace: Built ~200 BC over Qin ruins (~6 km²). Initially functioned as the imperial court and political center for receiving officials; later repurposed as residence for empress dowagers, empresses, and concubines, including halls like Changxin, Changqiu, Yongshou, and Yongning.</div>`)[0];
+                popup_e0aab2c2ba1814348e1ee949990c0aa2.setContent(html_1ec37f2cc3d9c4304f373713415e0d84);
             
         
 
-        marker_2cbbc28ddc2fe69443f9bf649340da2b.bindPopup(popup_526dfbd3514b7a639eb0c1c120424d34)
+        marker_52e0a8525ec914f470efd22d30d8c710.bindPopup(popup_e0aab2c2ba1814348e1ee949990c0aa2)
         ;
 
         
     
     
-                marker_2cbbc28ddc2fe69443f9bf649340da2b.setIcon(icon_d808d003bd56be01ce8c78c71eec4b97);
-            
-    
-            var marker_3397c6b9a7b75bac9ac200787407837f = L.marker(
-                [34.325, 108.8975],
+            marker_52e0a8525ec914f470efd22d30d8c710.bindTooltip(
+                `<div>
+                     Changle Palace
+                 </div>`,
                 {
-}
-            ).addTo(map_d7028da68cba8e4047772a559119c241);
-        
-    
-            var icon_ece5b1b5ab20f1014bd55872112aea05 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "purple",
-  "iconColor": "white",
-  "icon": "sun",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
+  "sticky": true,
 }
             );
         
     
-        var popup_0fa0e00246df6e1460f4cd6721429d67 = L.popup({
+            var marker_dcc70b60e3bd292a9050a2d5a092bc32 = L.marker(
+                [34.30863, 108.83348],
+                {
+}
+            ).addTo(map_6c8da0fb6029c64497b9c3727121291a);
+        
+    
+        var popup_59787b9be817496d143f1bb310ac97c7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_6511d8c9a74ac111a745c786dee66f4e = $(`<div id="html_6511d8c9a74ac111a745c786dee66f4e" style="width: 100.0%; height: 100.0%;">明光宫 (Mingguang Palace)</div>`)[0];
-                popup_0fa0e00246df6e1460f4cd6721429d67.setContent(html_6511d8c9a74ac111a745c786dee66f4e);
+                var html_7aebc681862bd78b5ad3608636e2f3d4 = $(`<div id="html_7aebc681862bd78b5ad3608636e2f3d4" style="width: 100.0%; height: 100.0%;">Jianzhang Palace: Built 104 BC in Shanglin Park (~20×30 li). Acted as a ceremonial and leisure palace for imperial hunts, displays of wealth, and mythological recreations (e.g., artificial islands); featured over 1,000 gates and 10,000 rooms, connected to Weiyang Palace.</div>`)[0];
+                popup_59787b9be817496d143f1bb310ac97c7.setContent(html_7aebc681862bd78b5ad3608636e2f3d4);
             
         
 
-        marker_3397c6b9a7b75bac9ac200787407837f.bindPopup(popup_0fa0e00246df6e1460f4cd6721429d67)
+        marker_dcc70b60e3bd292a9050a2d5a092bc32.bindPopup(popup_59787b9be817496d143f1bb310ac97c7)
         ;
 
         
     
     
-                marker_3397c6b9a7b75bac9ac200787407837f.setIcon(icon_ece5b1b5ab20f1014bd55872112aea05);
-            
-    
-            var marker_b7f3ba7f4256abbc17462a2aa3054e02 = L.marker(
-                [34.325, 108.8572],
+            marker_dcc70b60e3bd292a9050a2d5a092bc32.bindTooltip(
+                `<div>
+                     Jianzhang Palace
+                 </div>`,
                 {
-}
-            ).addTo(map_d7028da68cba8e4047772a559119c241);
-        
-    
-            var icon_1a968887d685aa48234909aee160bfd8 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "orange",
-  "iconColor": "white",
-  "icon": "tree",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
+  "sticky": true,
 }
             );
         
     
-        var popup_c480a3a5784727b8b8ab1c372f2e685e = L.popup({
+            var marker_32c326ce17ab619fbfc8d389969d6896 = L.marker(
+                [34.3226, 108.8538],
+                {
+}
+            ).addTo(map_6c8da0fb6029c64497b9c3727121291a);
+        
+    
+        var popup_6473de5f35806525d4b17c20869beea0 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_7291f2cbc78f42bc156396ff0f69a055 = $(`<div id="html_7291f2cbc78f42bc156396ff0f69a055" style="width: 100.0%; height: 100.0%;">桂宫 (Gui Palace)</div>`)[0];
-                popup_c480a3a5784727b8b8ab1c372f2e685e.setContent(html_7291f2cbc78f42bc156396ff0f69a055);
+                var html_ce0bc8140482a6439863c97ac5c33544 = $(`<div id="html_ce0bc8140482a6439863c97ac5c33544" style="width: 100.0%; height: 100.0%;">Gui Palace: Built 101 BC as harem extension north of Weiyang, rectangular (~880m E-W, 1800m N-S). Primarily served as residential quarters for concubines and imperial consorts, supporting the emperor's personal and family life.</div>`)[0];
+                popup_6473de5f35806525d4b17c20869beea0.setContent(html_ce0bc8140482a6439863c97ac5c33544);
             
         
 
-        marker_b7f3ba7f4256abbc17462a2aa3054e02.bindPopup(popup_c480a3a5784727b8b8ab1c372f2e685e)
+        marker_32c326ce17ab619fbfc8d389969d6896.bindPopup(popup_6473de5f35806525d4b17c20869beea0)
         ;
 
         
     
     
-                marker_b7f3ba7f4256abbc17462a2aa3054e02.setIcon(icon_1a968887d685aa48234909aee160bfd8);
-            
-    
-            var marker_c8ea358b74794e8570332ebc7b1e3986 = L.marker(
-                [34.325, 108.87],
+            marker_32c326ce17ab619fbfc8d389969d6896.bindTooltip(
+                `<div>
+                     Gui Palace (Approximate)
+                 </div>`,
                 {
-}
-            ).addTo(map_d7028da68cba8e4047772a559119c241);
-        
-    
-            var icon_152d59c1437afb8ad5474d02f1f323a8 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "black",
-  "iconColor": "white",
-  "icon": "arrow-up",
-  "prefix": "fa",
-  "extraClasses": "fa-rotate-0",
+  "sticky": true,
 }
             );
         
     
-        var popup_d5b65b560d4bc17465f73429e0ddd7fb = L.popup({
+            var marker_3d6f5d90dea05dbf962975ae22de7e1c = L.marker(
+                [34.3226, 108.862],
+                {
+}
+            ).addTo(map_6c8da0fb6029c64497b9c3727121291a);
+        
+    
+        var popup_75be975e64c6cbc1ae5306c49fcbd738 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_2e3cc970021b3707a9f2ba04fa704fa0 = $(`<div id="html_2e3cc970021b3707a9f2ba04fa704fa0" style="width: 100.0%; height: 100.0%;">北宫 (North Palace)</div>`)[0];
-                popup_d5b65b560d4bc17465f73429e0ddd7fb.setContent(html_2e3cc970021b3707a9f2ba04fa704fa0);
+                var html_16af3284bc02a930162c0c25457a247e = $(`<div id="html_16af3284bc02a930162c0c25457a247e" style="width: 100.0%; height: 100.0%;">North Palace (Bei Gong): Built ~200 BC, expanded under Emperor Wu (~620m E-W, 1710m N-S). Functioned as a residential palace for the imperial family, including consorts and relatives, located adjacent to Gui Palace in the northern sector.</div>`)[0];
+                popup_75be975e64c6cbc1ae5306c49fcbd738.setContent(html_16af3284bc02a930162c0c25457a247e);
             
         
 
-        marker_c8ea358b74794e8570332ebc7b1e3986.bindPopup(popup_d5b65b560d4bc17465f73429e0ddd7fb)
+        marker_3d6f5d90dea05dbf962975ae22de7e1c.bindPopup(popup_75be975e64c6cbc1ae5306c49fcbd738)
         ;
 
         
     
     
-                marker_c8ea358b74794e8570332ebc7b1e3986.setIcon(icon_152d59c1437afb8ad5474d02f1f323a8);
+            marker_3d6f5d90dea05dbf962975ae22de7e1c.bindTooltip(
+                `<div>
+                     North Palace (Approximate)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6b9ca03d9d9566175fa1e6fcdb23e322 = L.marker(
+                [34.33, 108.8975],
+                {
+}
+            ).addTo(map_6c8da0fb6029c64497b9c3727121291a);
+        
+    
+        var popup_e6eb791a78863afba4e29c8175810454 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
             
+                var html_5e250bad26531f955a3d75c245ae3fd4 = $(`<div id="html_5e250bad26531f955a3d75c245ae3fd4" style="width: 100.0%; height: 100.0%;">Mingguang Palace: Built 101 BC north of Changle. Served as a guesthouse for visitors and additional residential space, interconnected with Changle and Weiyang Palaces via flying corridors for secure imperial movement.</div>`)[0];
+                popup_e6eb791a78863afba4e29c8175810454.setContent(html_5e250bad26531f955a3d75c245ae3fd4);
+            
+        
+
+        marker_6b9ca03d9d9566175fa1e6fcdb23e322.bindPopup(popup_e6eb791a78863afba4e29c8175810454)
+        ;
+
+        
+    
+    
+            marker_6b9ca03d9d9566175fa1e6fcdb23e322.bindTooltip(
+                `<div>
+                     Mingguang Palace (Approximate)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
 </script>
 </html>
